@@ -9,7 +9,9 @@
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
-    "test": "node --test src/**/*.test.js"
+    "test": "node --test src/**/*.test.js",
+    "setup": "sh scripts/init.sh && npm install",
+    "postinstall": "sh scripts/init.sh"
   },
   "dependencies": {
     "commander": "^12.0.0",
